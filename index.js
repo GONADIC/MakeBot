@@ -15,9 +15,9 @@ client.on('ready', () => {
   client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
 
   let state_list = [
-    '!help를 쳐보세요.',
-    '메렁메렁',
-    '에베베베베',
+    '봇은 테스트중에 있습니다',
+    'ULTIMATE 핵 출시 준비중',
+    '아ㅏㅏㅏㅏㅏㅏ',
   ]
   let state_list_index = 1;
   let change_delay = 3000; // 이건 초입니당. 1000이 1초입니당.
@@ -63,8 +63,8 @@ client.on('message', (message) => {
   MessageSave(message)
   if(message.author.bot) return;
 
-  if(message.content == 'ping') {
-    return message.reply('pong');
+  if(message.content == 'ㄷㄷ') {
+    return message.reply('헉 ㄷㄷ');
   }
 
   if(message.content == '!si') {
