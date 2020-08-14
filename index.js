@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.argv.length == 2 ? process.env.token : "";
-const welcomeChannelName = "안녕하세요";
-const byeChannelName = "안녕히가세요";
-const welcomeChannelComment = "어서오세요.";
-const byeChannelComment = "안녕히가세요.";
+const welcomeChannelName = "ㅎㅇㅎㅇ";
+const byeChannelName = "ㅂㅇㅂㅇ";
+const welcomeChannelComment = "ㅎㅇㅎㅇ.";
+const byeChannelComment = "ㅂㅇㅂㅇ";
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -110,10 +110,11 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!전체공지2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of 콜라곰 BOT')
-        .setColor('#186de6')
-        .setFooter(`콜라곰 BOT ❤️`)
-        .setTimestamp()
+        .setAuthor('𝗨𝗟𝗧𝗜𝗠𝗔𝗧𝗘 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟', 'https://cdn.discordapp.com/icons/742910703274426409/15f6fb9d663813091c45f0fc8a89bfd6.webp?size=128')
+        .setColor('#18e6a1')
+        .setFooter(`이 메시지는 𝐔𝐋𝐓𝐈𝐌𝐀𝐓𝐄 총판샵 에서 발송 했습니다`)
+        .setImage('https://cdn.discordapp.com/attachments/743448091948220488/743638994616844298/tenor.gif')
+        
   
       embed.addField('공지: ', contents);
   
@@ -135,7 +136,7 @@ client.on('message', (message) => {
         x.user.send(`<@${message.author.id}> ${contents}`);
       });
   
-      return message.reply('공지를 전송했습니다.');
+      return message.reply('전송완료 해쬬용!');
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
@@ -182,7 +183,7 @@ client.on('message', (message) => {
 
 function checkPermission(message) {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) {
-    message.channel.send(`<@${message.author.id}> ` + "명령어를 수행할 관리자 권한을 소지하고 있지않습니다.")
+    message.channel.send(`<@${message.author.id}> ` + "너는 그런거 할 권한 없서!")
     return true;
   } else {
     return false;
