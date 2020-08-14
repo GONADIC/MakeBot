@@ -18,7 +18,7 @@ client.on("guildMemberAdd", (member) => {
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
 
-  member.addRole(guild.roles.find(role => role.name == "게스트"));
+  member.addRole(guild.roles.find(role => role.name == "📙ㅣUSERㅣ📙"));
 });
 
 client.on("guildMemberRemove", (member) => {
@@ -32,8 +32,8 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == 'ㄷㄷ') {
-    return message.reply('ㄷㄷ좀 고만 쳐라...');
+  if(message.content == '5877') {
+    return message.reply('살살빨어..');
   }
 
   if(message.content == 'embed') {
