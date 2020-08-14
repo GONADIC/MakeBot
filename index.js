@@ -18,7 +18,7 @@ client.on("guildMemberAdd", (member) => {
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
 
-  member.addRole(guild.roles.find(role => role.name == "USER"));
+  member.addRole(guild.roles.find(role => role.name == "게스트"));
 });
 
 client.on("guildMemberRemove", (member) => {
@@ -123,7 +123,7 @@ client.on('message', (message) => {
         x.user.send(embed)
       });
   
-      return message.reply('DM확인 고고 후후..!');
+      return message.reply('공지를 전송했습니다.');
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
@@ -136,7 +136,7 @@ client.on('message', (message) => {
         x.user.send(`<@${message.author.id}> ${contents}`);
       });
   
-      return message.reply('DM 확인행 후후...!');
+      return message.reply('전송완료 해쬬용!');
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
