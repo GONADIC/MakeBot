@@ -33,7 +33,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content == 'ㄷㄷ') {
-    return message.reply('ㄷㄷ좀 고만 쳐라..');
+    return message.reply('ㄷㄷ좀 고만 쳐라...');
   }
 
   if(message.content == 'embed') {
@@ -51,7 +51,7 @@ client.on('message', (message) => {
       .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
       .addBlankField()
       .setTimestamp()
-      .setFooter('나긋해가 만듬', img)
+      .setFooter('고나딕 만듬', img)
 
     message.channel.send(embed)
   } else if(message.content == '!help') {
@@ -105,10 +105,10 @@ client.on('message', (message) => {
           message.channel.send('**'+message.guild.channels.get(message.channel.id).guild.name+'** 채널 권한이 없어 초대코드 발행 실패')
         }
       })
-  } else if(message.content.startsWith('!전체공지2')) {
+  } else if(message.content.startsWith('!공지')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
-      let contents = message.content.slice('!전체공지2'.length);
+      let contents = message.content.slice('!공지'.length);
       let embed = new Discord.RichEmbed()
         .setAuthor('𝗨𝗟𝗧𝗜𝗠𝗔𝗧𝗘 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟', 'https://cdn.discordapp.com/icons/742910703274426409/15f6fb9d663813091c45f0fc8a89bfd6.webp?size=128')
         .setColor('#18e6a1')
@@ -123,20 +123,20 @@ client.on('message', (message) => {
         x.user.send(embed)
       });
   
-      return message.reply('공지를 전송했습니다.');
+      return message.reply('DM확인 고고 후후..!');
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
-  } else if(message.content.startsWith('!전체공지')) {
+  } else if(message.content.startsWith('!공지2')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
-      let contents = message.content.slice('!전체공지'.length);
+      let contents = message.content.slice('!공지2'.length);
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
         x.user.send(`<@${message.author.id}> ${contents}`);
       });
   
-      return message.reply('전송완료 해쬬용!');
+      return message.reply('DM 확인행 후후...!');
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
