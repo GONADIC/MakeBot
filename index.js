@@ -116,7 +116,7 @@ client.on('message', (message) => {
         .setImage('https://cdn.discordapp.com/attachments/743448091948220488/743638994616844298/tenor.gif')
         
   
-      embed.addField(contents);
+      embed.addField('@everyone ', contents);
   
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
