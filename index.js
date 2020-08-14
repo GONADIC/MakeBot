@@ -33,7 +33,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content == '5877') {
-    return message.reply('살살빨어..');
+    return message.reply('살살빨어...');
   }
 
   if(message.content == 'embed') {
