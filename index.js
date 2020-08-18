@@ -113,7 +113,7 @@ client.on('message', (message) => {
         .setAuthor('𝗨𝗟𝗧𝗜𝗠𝗔𝗧𝗘 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟', 'https://cdn.discordapp.com/icons/742910703274426409/15f6fb9d663813091c45f0fc8a89bfd6.webp?size=128')
         .setColor('#18e6a1')
         .setFooter(`이 메시지는 𝐔𝐋𝐓𝐈𝐌𝐀𝐓𝐄 총판샵 에서 발송 했습니다`)
-        .setImage('https://cdn.discordapp.com/attachments/743481596383985754/745073621046657156/FINAL_COMP.gif')
+        .setImage('https://cdn.discordapp.com/attachments/744531369102802964/745077715627016272/a_b63f0a61714662265d251be689900e98-1.gif')
         
   
       embed.addField('@everyone ', contents);
