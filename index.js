@@ -33,7 +33,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content == 'ㄷㄷ') {
-    return message.reply('ㄷㄷ좀 고만 쳐라...');
+    return message.reply('그만하라니깐..');
   }
 
   if(message.content == 'embed') {
@@ -68,9 +68,9 @@ client.on('message', (message) => {
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of 콜라곰 BOT', helpImg)
+      .setAuthor('고나딕', helpImg)
       .setColor('#186de6')
-      .setFooter(`콜라곰 BOT ❤️`)
+      .setFooter(`고나딕`)
       .setTimestamp()
     
     commandList.forEach(x => {
@@ -113,7 +113,7 @@ client.on('message', (message) => {
         .setAuthor('𝗨𝗟𝗧𝗜𝗠𝗔𝗧𝗘 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟', 'https://cdn.discordapp.com/icons/742910703274426409/15f6fb9d663813091c45f0fc8a89bfd6.webp?size=128')
         .setColor('#18e6a1')
         .setFooter(`이 메시지는 𝐔𝐋𝐓𝐈𝐌𝐀𝐓𝐄 총판샵 에서 발송 했습니다`)
-        .setImage('https://cdn.discordapp.com/attachments/743448091948220488/743638994616844298/tenor.gif')
+        .setImage('https://cdn.discordapp.com/attachments/743481596383985754/745073621046657156/FINAL_COMP.gif')
         
   
       embed.addField('@everyone ', contents);
@@ -183,7 +183,7 @@ client.on('message', (message) => {
 
 function checkPermission(message) {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) {
-    message.channel.send(`<@${message.author.id}> ` + "너는 그런거 할 권한 없서!")
+    message.channel.send(`<@${message.author.id}> ` + "흠흠.. 하기싫은데....")
     return true;
   } else {
     return false;
