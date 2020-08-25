@@ -33,7 +33,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content == 'ㄷㄷ') {
-    return message.reply('싸우자는거야 ..? 아 그만하라고...');
+    return message.reply('하앙 ㄷㄷ ..');
   }
 
   if(message.content == 'embed') {
