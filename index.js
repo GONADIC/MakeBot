@@ -8,7 +8,7 @@ const byeChannelComment = "ㅂㅇㅂㅇ";
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: 'ULTIMATE 핵 개발중' }, status: 'online' })
+  client.user.setPresence({ game: { name: '해킹샵 오픈..' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -32,8 +32,8 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == 'ㄷㄷ') {
-    return message.reply('하앙 ㄷㄷ ..');
+  if(message.content == 'ping') {
+    return message.reply('pong pong pong pong pong 퐁 퐁 퐁 퐁');
   }
 
   if(message.content == 'embed') {
@@ -41,7 +41,7 @@ client.on('message', (message) => {
     let embed = new Discord.RichEmbed()
       .setTitle('타이틀')
       .setURL('http://www.naver.com')
-      .setAuthor('나긋해', img, 'http://www.naver.com')
+      .setAuthor('고나딕', img, 'http://www.naver.com')
       .setThumbnail(img)
       .addBlankField()
       .addField('Inline field title', 'Some value here')
@@ -54,7 +54,7 @@ client.on('message', (message) => {
       .setFooter('고나딕 만듬', img)
 
     message.channel.send(embed)
-  } else if(message.content == '!help') {
+  } else if(message.content == '!hel') {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
       {name: '!help', desc: 'help'},
