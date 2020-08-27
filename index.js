@@ -8,7 +8,7 @@ const byeChannelComment = "ㅂㅇㅂㅇ";
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: '해킹샵 오픈..' }, status: 'online' })
+  client.user.setPresence({ game: { name: '해킹샵 오픈준비중..' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
