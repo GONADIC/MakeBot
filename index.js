@@ -112,8 +112,8 @@ client.on('message', (message) => {
       let embed = new Discord.RichEmbed()
         .setAuthor('𝗨𝗟𝗧𝗜𝗠𝗔𝗧𝗘 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟', 'https://cdn.discordapp.com/icons/742910703274426409/15f6fb9d663813091c45f0fc8a89bfd6.webp?size=128')
         .setColor('#18e6a1')
-        .setFooter(`이 메시지는 𝐔𝐋𝐓𝐈𝐌𝐀𝐓𝐄 총판샵 에서 발송 했습니다`)
-        .setImage('https://cdn.discordapp.com/attachments/744531369102802964/745077715627016272/a_b63f0a61714662265d251be689900e98-1.gif')
+        .setFooter(`이 메시지는 𝗧𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗜𝗡𝗚샵 에서 발송 했습니다`)
+        .setImage('https://cdn.discordapp.com/avatars/357138746245644289/a_9c68210dce67e15bda118fb1da7a8fd5.gif?size=128')
         
   
       embed.addField('@everyone ', contents);
