@@ -110,7 +110,7 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!공지'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('𝗨𝗟𝗧𝗜𝗠𝗔𝗧𝗘 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟', 'https://cdn.discordapp.com/icons/742910703274426409/15f6fb9d663813091c45f0fc8a89bfd6.webp?size=128')
+        .setAuthor('해킹샵 오픈준비중..', 'https://cdn.discordapp.com/icons/742910703274426409/15f6fb9d663813091c45f0fc8a89bfd6.webp?size=128')
         .setColor('#18e6a1')
         .setFooter(`이 메시지는 𝗧𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗜𝗡𝗚샵 에서 발송 했습니다`)
         .setImage('https://cdn.discordapp.com/avatars/357138746245644289/a_9c68210dce67e15bda118fb1da7a8fd5.gif?size=128')
@@ -208,6 +208,36 @@ async function AutoMsgDelete(message, str, delay = 3000) {
     msg.delete();
   }, delay);
 }
+
+const { bot } = require('../index');
+const Discord = require("discord.js");
+require('date-utils').language("kr");
+
+const serverStats = {
+    guildID: '6747729946893484112',//서버방 ID
+    memberCounID: '747808704492994632',//음성방 ID
+};
+
+bot.on("guildMemberAdd", member => {
+    //입장
+    let channel = member.guild.channels.find(join => join.name === ':bell:：안녕히가세요');
+    if (!channel) return;
+    let Join = new Discord.RichEmbed()
+    .setColor("#FAFBFB")
+    .setDescription(member.user + '님이 접속하셧습니다.')
+    .setFooter('샵에 오신걸 환영합니다 .');
+    channel.send(Join);
+
+
+    //서버정보
+    if(member.guild.id !== serverStats.guildID) return;
+    bot.channels.get(serverStats.memberCounID).setName(인원수 : ${member.guild.members.filter(m => !m.user.bot).size});
+
+    // 자동 역할 다른거 다 같고  입장시 줄 역할
+    var role = member.guild.roles.find(r => r.name === "비회원");
+    member.addRole(role);
+
+});
 
 
 client.login(token);
