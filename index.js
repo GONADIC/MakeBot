@@ -223,7 +223,7 @@ bot.on("guildMemberAdd", member => {
     let channel = member.guild.channels.find(join => join.name === ':bell:：안녕히가세요');
     if (!channel) return;
     let Join = new Discord.RichEmbed()
-    .setColor("#FAFBFB")
+    .setColor("#04FF00")
     .setDescription(member.user + '님이 접속하셧습니다.')
     .setFooter('샵에 오신걸 환영합니다 .');
     channel.send(Join);
