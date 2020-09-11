@@ -214,7 +214,7 @@ const Discord = require("discord.js");
 require('date-utils').language("kr");
 
 const serverStats = {
-    guildID: '6747729946893484112',//서버방 ID
+    guildID: '747729946893484112',//서버방 ID
     memberCounID: '747808704492994632',//음성방 ID
 };
 
