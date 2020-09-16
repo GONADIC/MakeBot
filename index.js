@@ -110,13 +110,13 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!공지'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('**! MELT#7777**', 'https://cdn.discordapp.com/attachments/755601938657050624/755647640393482250/e6a099941a07707ae93b82bd70aa4c82.webp')
+        .setAuthor('! MELT#7777', 'https://cdn.discordapp.com/attachments/755601938657050624/755647640393482250/e6a099941a07707ae93b82bd70aa4c82.webp')
         .setColor('#ff9999')
         .setFooter(`이 메시지는 𝗠𝗘𝗟𝗧 샵에서 발송 했습니다`)
         .setImage('https://cdn.discordapp.com/avatars/357138746245644289/a_9c68210dce67e15bda118fb1da7a8fd5.gif?size=128')
         
   
-      embed.addField('@everyone ', contents);
+      embed.addField('https://imgur.com/a/oQ3ipOe ', contents);
   
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
