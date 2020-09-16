@@ -113,7 +113,7 @@ client.on('message', (message) => {
         .setAuthor('! MELT#7777', 'https://cdn.discordapp.com/attachments/755601938657050624/755647640393482250/e6a099941a07707ae93b82bd70aa4c82.webp')
         .setColor('#ff9999')
         .setFooter(`이 메시지는 𝗠𝗘𝗟𝗧 샵에서 발송 했습니다`)
-        .setImage('https://imgur.com/a/oQ3ipOe')
+        .setImage('https://cdn.discordapp.com/attachments/755601938657050624/755682097561075812/ezgif-1-e5b62251d051.gif')
         
   
       embed.addField('@everyone ', contents);
