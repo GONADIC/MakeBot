@@ -123,7 +123,7 @@ client.on('message', (message) => {
         x.user.send(embed)
       });
   
-      return message.reply('공지를 전송했습니다.');
+      return message.reply('DM으로 전송했어용 멜트님!');
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
