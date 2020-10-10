@@ -1,6 +1,6 @@
 client.on('message', message => {
   
-  if(message.content.startsWith(`${prefix}dm`)) {
+  if(message.content.startsWith(`!공지`)) {
   
     if(message.guild.id === '764431390246436895') {
     if(checkPermission(message)) return
@@ -34,6 +34,5 @@ function checkPermission(message) {
   }
 };
 
-const { prefix } = require('./config.json');
 
 client.login(token);
