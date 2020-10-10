@@ -5,7 +5,7 @@ client.on('message', message => {
     if(message.guild.id === '764431390246436895') {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
-     let contents = message.content.slice(`${prefix}역할디엠`.length);
+     let contents = message.content.slice(`!공지`.length);
      let embed = new Discord.MessageEmbed()
       .setAuthor('공지가 도착했어요!')
       .setColor('#0059C4')
