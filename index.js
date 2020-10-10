@@ -1,6 +1,6 @@
 client.on('message', message => {
   
-  if(message.content.startsWith(`${prefix}역할디엠`)) {
+  if(message.content.startsWith(`${prefix}dm`)) {
   
     if(message.guild.id === '764431390246436895') {
     if(checkPermission(message)) return
